@@ -1,0 +1,126 @@
+.root {
+    flex: 1;
+    background-color: #450F4A;
+}
+
+.title
+{
+    justify-content:center;
+    -unity-text-align: middle-center;
+    font-size: 50px;
+    color:white;
+    margin-top: 70px;
+}
+.container 
+{
+    flex:1;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.settingsContent
+{
+    flex:1;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    margin-top: 50px;
+    height:100%;
+    padding-left:10%;
+    padding-bottom:10%;
+
+}
+
+.avatarContent
+{
+    flex:1;
+    align-items: center;
+    justify-content:center;
+    height:100%;
+    padding-right:10%;
+    padding-bottom:10%;
+}
+
+.avatarImage 
+{
+    height: 256px;
+    width: 256px;
+    background-color: purple;
+    border-radius:3px;
+}
+
+.genderContent, 
+.raceContent, 
+.classFieldContent, 
+.ageContent,
+.personalityContent,
+.generateAvatarButtonContent
+{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+.generateAvatarButtonContent
+{
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    margin-top:100px;
+}
+
+.genderDropdown, 
+.raceDropdown, 
+.classFieldDropdown, 
+.ageSlider,
+.personalityText,
+.generateAvatarButton
+{
+    flex:1;
+    width:100%;
+    height: 50px;
+    background-color:purple;
+    border-radius:3px;
+}
+
+.genderDropdown > VisualElement,
+.raceDropdown > VisualElement, 
+.classFieldDropdown > VisualElement, 
+.ageSlider > VisualElement,
+{
+    background-color: #58135E;
+}
+
+.genderDropdown .unity-base-field__input .unity-popup-field__arrow {
+    background-color: purple; /* Background color of the fold icon */
+    -unity-background-image-tint-color: #ffffff; /* Tint color of the fold icon */
+}
+.genderDropdown > .unity-base-field__label,
+.raceDropdown > .unity-base-field__label,
+.classFieldDropdown > .unity-base-field__label,
+.ageSlider > .unity-base-field__label,
+.personalityText > .unity-base-field__label,
+{
+    /* background-color:#D92FE8; */
+    color: white;       
+    font-size: 18px;  
+    margin-left: 50px;
+    padding:0;
+}
+
+
+.generateAvatarButton
+{
+    background-color:purple;
+    color: white;
+    font-size:24px;
+    align-items:center;
+    width:75%;
+    margin-left:65px;
+    border-radius:10px;
+    padding:5px;
+}

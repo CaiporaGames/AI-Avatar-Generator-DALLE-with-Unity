@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game/UIDocument/AvatarGenerator.uss?fileID=7433441132597879392&amp;guid=33829c2d61fa59f4e8a8e3bda0cdd4bd&amp;type=3#AvatarGenerator" />
+    <ui:VisualElement class="root" name="root">
+
+        <ui:Label text="Avatar Generator" class="title" />
+
+        <ui:VisualElement class="container" name="container">
+            <ui:VisualElement class="settingsContent" name="settingsContent">
+
+               <ui:VisualElement class="genderContent" name="genderContent">
+                    <ui:DropdownField label="Gender" class="genderDropdown" name="genderDropdown" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="raceContent" name="raceContent">
+                    <ui:DropdownField label="Race" class="raceDropdown" name="raceDropdown" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="classFieldContent" name="classFieldContent">
+                    <ui:DropdownField label="classField" class="classFieldDropdown" name="classFieldDropdown" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="ageContent" name="ageContent">
+                    <ui:Slider label="Age: " class="ageSlider" name="ageSlider" low-value="10" high-value="1000" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="personalityContent" name="personalityContent">
+                    <ui:TextField label="Personality" class="personalityText" name="personalityText"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="generateAvatarButtonContent" name="generateAvatarButtonContent">
+                    <ui:Button text="Generate Avatar" class="generateAvatarButton" name="generateAvatarButton"/>
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+            <ui:VisualElement class="avatarContent" name="avatarContent">
+                <ui:Image class="avatarImage" name="avatarImage"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
